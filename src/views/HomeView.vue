@@ -1,7 +1,6 @@
 <template>
     <Welcome/>
     <Introduction/>
-    <LastProjects/>
 </template>
 <script>
 import Introduction from '@/components/Introduction.vue';

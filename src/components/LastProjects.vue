@@ -9,7 +9,7 @@ export default{
 }
 </script>
 <style scoped>
-.main-class{
-    padding:0;
+.container{
+    background-color: var(--my-background);
 }
 </style>

@@ -1,0 +1,94 @@
+@import './base.css';
+/*Fuentes*/
+@font-face {
+  font-family: 'Inconsolata_Regular';
+  src: url('@/assets/fonts/Inconsolata-Regular.ttf');
+}
+@font-face {
+  font-family: 'Inconsolata_Medium';
+  src: url('@/assets/fonts/Inconsolata-Medium.ttf');
+}
+@font-face {
+  font-family: 'Inconsolata_Light';
+  src: url('@/assets/fonts/Inconsolata-Light.ttf');
+}
+@font-face {
+  font-family: 'Inconsolata_ExtraLight';
+  src: url('@/assets/fonts/Inconsolata-ExtraLight.ttf');
+}
+body, h1{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.font-50{
+  font-size: 3.5rem;
+}
+.font-30{
+  font-size: 1.5rem;/*30 en figma*/
+}
+.font-20{
+  font-size: 1.3rem; /*20 en figma*/
+}
+.font-15{
+  font-size: 1.2;
+}
+.font-10{
+  font-size: 1rem;
+}
+.font-regular{
+  font-family: 'Inconsolata_Regular';
+}
+.font-medium{
+  font-family: 'Inconsolata_Medium';
+}
+.font-light{
+  font-family: 'Inconsolata_Light';
+}
+.font-xlight{
+  font-family: 'Inconsolata_ExtraLight';
+}
+.text-light{
+  color: #ffffff;
+}
+.text-green{
+  color: var(--my-green);
+}
+/*container responsivo*/
+.container {
+  width: 100vw; /* Anchura fija del contenido */
+  max-width: 100%; /* Evita que el contenido desborde en pantallas pequeñas */
+  padding-right: 15px; /* Padding mínimo */
+  padding-left: 15px; /* Padding mínimo */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: calc((100vw - 540px) / 2);
+    padding-left: calc((100vw - 540px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: calc((100vw - 720px) / 2);
+    padding-left: calc((100vw - 720px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: calc((100vw - 960px) / 2);
+    padding-left: calc((100vw - 960px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-right: calc((100vw - 1200px) / 2);
+    padding-left: calc((100vw - 1200px) / 2);
+  }
+}

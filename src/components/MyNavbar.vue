@@ -19,6 +19,7 @@
             <NavbarIcons/>
         </nav>
     </header>
+    <div class="navbar-space"></div>
     <OffCanvas :status="menuStatus" @close="closeMenu"/>
 </template>
 <script>
@@ -56,6 +57,11 @@ header{
     display: flex;
     align-items: center;
     gap:2rem;
+    position:fixed;
+    z-index: 10;
+}
+.navbar-space{
+    height: 10vh;
 }
 .brand{
     display: flex;

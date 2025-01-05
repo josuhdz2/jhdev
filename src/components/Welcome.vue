@@ -56,4 +56,9 @@ export default{
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
+@media(max-width:900px){
+    .image{
+        display: none;
+    }
+}
 </style>

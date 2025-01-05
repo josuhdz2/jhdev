@@ -68,7 +68,11 @@ body, h1{
   margin-right: auto;
   margin-left: auto;
 }
-
+@media(max-width:900px){
+  html{
+    font-size: 15px;
+  }
+}
 @media (min-width: 576px) {
   .container {
     padding-right: calc((100vw - 540px) / 2);

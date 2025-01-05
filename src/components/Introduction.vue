@@ -1,13 +1,13 @@
 <template>
     <div class="container">
         <div class="blocks">
-            <Card title="Back-end" text="Desarrollo de la lógica del negocio para la construcción de un servicio optimizado y escalable." :years="3" zIndex="3">
+            <Card title="Back-end" text="Desarrollo de la lógica del negocio para la construcción de un servicio optimizado y escalable." :years="3" :zIndex="3">
                 <NodeJS :height="48" :width="48"/>
             </Card>
-            <Card title="Front-end" text="Hacer de tu diseño, algo totalmente funcional y listo para colocar en la web." :years="4" zIndex="2">
+            <Card title="Front-end" text="Hacer de tu diseño, algo totalmente funcional y listo para colocar en la web." :years="4" :zIndex="2">
                 <HTML :height="48" :width="48"/>
             </Card>
-            <Card title="DevOps" text="Hacer de tu diseño, algo totalmente funcional y listo para colocar en la web." :years="4" zIndex="1">
+            <Card title="DevOps" text="Hacer de tu diseño, algo totalmente funcional y listo para colocar en la web." :years="4" :zIndex="1">
                 <Docker :height="48" :width="48"/>
             </Card>
         </div>
@@ -46,12 +46,14 @@ export default{
 </script>
 <style scoped>
 .container{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--my-background);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .container>*{
     width: 100%;
@@ -65,5 +67,13 @@ export default{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+    .info{
+        order:-1;
+    }
 }
 </style>

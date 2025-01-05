@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="text-light info">
-            <span class="font-15 font-light">Informacion</span>
+            <span class="font-15 font-light">Información</span>
             <span class="font-15 font-regular">Tequisquiapan, Querétaro, C.P. 76750, Mexico.</span>
             <h1 class="font-light font-40">contacto@herdev.com</h1>
         </div>
@@ -19,7 +19,7 @@
                 <span class="font-light text-light font-15">@ 2024 Todos los derechos reservados</span>
             </div>
         </div>
-        <div>
+        <div class="social">
             <GitHub :height="24" :width="24"/>
             <WhatsApp :height="24" :width="24"/>
         </div>
@@ -61,5 +61,20 @@ export default{
     display: flex;
     flex-direction: column;
     gap:1rem
+}
+.social{
+    display:flex;
+    gap: 2rem;
+}
+@media(max-width:900px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .footer-foot{
+        order:5;
+    }
+    .social{
+        justify-content: center;
+    }
 }
 </style>

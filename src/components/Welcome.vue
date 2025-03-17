@@ -23,11 +23,13 @@ export default{
 </script>
 <style scoped>
 .container{
-    height: 90vh;
+    min-height: 90vh;
     background-color: var(--my-background-light);
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .container>*{
     width: 100%;
@@ -55,5 +57,15 @@ export default{
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+}
+@media(max-width:900px){
+    .container{
+        min-height: 60vh;
+        flex-direction: column;
+    }
+    .image{
+        align-items: center;
+        display: none;
+    }
 }
 </style>

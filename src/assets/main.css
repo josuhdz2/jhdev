@@ -21,9 +21,13 @@ body, h1{
 }
 *{
   box-sizing: border-box;
+  font-weight: normal;
 }
 .font-50{
   font-size: 3.5rem;
+}
+.font-40{
+  font-size: 2.5rem;
 }
 .font-30{
   font-size: 1.5rem;/*30 en figma*/
@@ -64,7 +68,11 @@ body, h1{
   margin-right: auto;
   margin-left: auto;
 }
-
+@media(max-width:900px){
+  html{
+    font-size: 15px;
+  }
+}
 @media (min-width: 576px) {
   .container {
     padding-right: calc((100vw - 540px) / 2);

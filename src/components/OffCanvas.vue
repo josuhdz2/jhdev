@@ -38,6 +38,7 @@ export default{
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 15;
     background-color: #00000086;
 }
 .offcanvas{

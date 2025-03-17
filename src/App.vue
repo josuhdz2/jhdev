@@ -1,5 +1,5 @@
 <template>
-    <MyNavbar/>
+    <MyNavbar v-if="false"/>
     <RouterView/>
     <MyFooter/>
 </template>
